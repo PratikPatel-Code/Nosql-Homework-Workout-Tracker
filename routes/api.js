@@ -3,7 +3,7 @@
 const router = require("express").Router();
 const mongoose = require("mongoose");
 const castAggregation = require("mongoose-cast-aggregation");
-const Workout = require("../models/workout.js");
+const Workout = require("../models/workoutSchema.js");
 const { ObjectId } = require("mongodb");
 
 // A plugin that will cast the dates used.
