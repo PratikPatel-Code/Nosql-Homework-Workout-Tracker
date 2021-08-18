@@ -1,7 +1,7 @@
 {
   "name": "mongoose_skeleton",
   "version": "1.0.0",
-  "description": "Backend application using Mongo",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,16 +15,6 @@
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "mongoose-cast-aggregation": "^0.1.2",
-    "mongodb": "^4.0.1",
     "morgan": "^1.9.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PratikPatel-Code/Nosql-Homework-Workout-Tracker.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/PratikPatel-Code/Nosql-Homework-Workout-Tracker/issues"
-  },
-  "homepage": "https://github.com/PratikPatel-Code/Nosql-Homework-Workout-Tracker#readme"
+  }
 }
