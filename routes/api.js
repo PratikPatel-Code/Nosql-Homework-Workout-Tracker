@@ -3,14 +3,13 @@
 const router = require("express").Router();
 const mongoose = require("mongoose");
 const castAggregation = require("mongoose-cast-aggregation");
-const Workout = require("../models/workoutSchema.js");
+const Workout = require("../models/workout.js");
 const { ObjectId } = require("mongodb");
 
 // A plugin that will cast the dates used.
 mongoose.plugin(castAggregation);
 
 router.post("/api/workouts", ({ body }, res) => {
-  console.log(body);
   Workout.create(body)
     .then((dbWorkout) => {
       res.json(dbWorkout);
@@ -22,6 +21,7 @@ router.post("/api/workouts", ({ body }, res) => {
 
 router.put("/api/workouts/:id", (req, res) => {
   let id = ObjectId(req.params.id);
+
   Workout.collection
     .findOneAndUpdate(
       { _id: id },
