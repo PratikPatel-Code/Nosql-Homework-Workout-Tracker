@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// Originally put all in one {} and didn't work
+
 const WorkoutSchema = new Schema({
   exercises: [
     {

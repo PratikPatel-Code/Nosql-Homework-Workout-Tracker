@@ -1,11 +1,14 @@
+//Standard requires
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const mongodb = require("mongodb");
 const path = require("path");
 
+//Chnaged port to 3005 because I need to remove 3000 and 3001
 const PORT = process.env.PORT || 3005;
 
+//Originally had routes in a folder similar to mvc model, couldn't get it to work.
 const db = require("./models");
 const { Router } = require("express");
 
